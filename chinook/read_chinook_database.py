@@ -11,7 +11,9 @@ with sql.connect('chinook.db') as conn:
     # This will add a single entry to the student table
 
     chinook_read = '''
-        SELECT * FROM albums;
+        SELECT * FROM albums
+        JOIN artists
+        ON albums.ArtistId = artists.ArtistId;
         '''
 
     # We then execute it using cursor
