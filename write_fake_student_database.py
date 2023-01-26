@@ -17,7 +17,7 @@ with sql.connect('Student db/student.db') as conn:
     # This will add a single entry to the student table
 
     single_student_add = '''
-        INSERT INTO student (firstname, lastname, age, gender)
+        INSERT INTO student (FirstName, LastName, age, gender)
         VALUES ('Wednesday', 'Addams', 16, 'Female');
         '''
 
@@ -28,7 +28,7 @@ with sql.connect('Student db/student.db') as conn:
     # We can also do this in a tidier way using placeholders
 
     multi_student_add = '''
-            INSERT INTO student (firstname, lastname, age, gender)
+            INSERT INTO student (FirstName, LastName, age, gender)
             VALUES (?, ?, ?, ?);
             '''
 
