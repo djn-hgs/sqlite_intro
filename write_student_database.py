@@ -2,7 +2,7 @@ import sqlite3 as sql
 
 # This creates an sqlite file if it doesn't exist and opens it otherwise
 
-with sql.connect('student.db') as conn:
+with sql.connect('Student db/student.db') as conn:
 
     # The cursor is used to read and write to the database
 
